@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timing and Method of Application</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f4f4f4;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+            border-radius: 8px;
+        }
+        .header {
+            background: url('26.jpg') no-repeat center center;
+            background-size: cover;
+            color: white;
+            padding: 40px;
+            text-align: center;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            font-size: 2em;
+            position: relative;
+            z-index: 1;
+        }
+        .header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            border-radius: 8px;
+            z-index: -1;
+        }
+        .section {
+            background: url('25.jpg') no-repeat center center;
+            background-size: cover;
+            margin: 20px 0;
+            padding: 30px;
+            border-radius: 8px;
+            border: 2px solid #ddd;
+            transition: transform 0.3s, box-shadow 0.3s;
+            font-size: 1.2em;
+            color: white;
+            position: relative;
+            z-index: 1;
+        }
+        .section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            border-radius: 8px;
+            z-index: -1;
+        }
+        .section:hover {
+            transform: scale(1.05);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+            border-color: #aaa;
+        }
+        h2 {
+            text-align: center;
+            color: #1a0bf0;
+            font-size: 1.5em;
+        }
+        p, ul {
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Timing and Method of Application</h1>
+    </div>
+    <div class="container">
+        <div class="section">
+            <h2>Basal Application</h2>
+            <p>Basal application involves applying fertilizers at the time of planting or sowing. This method ensures that nutrients are available to the plants right from the beginning of their growth cycle.</p>
+        </div>
+        <div class="section">
+            <h2>Top Dressing</h2>
+            <p>Top dressing is the application of fertilizers to the soil surface after the crops have been planted. It is typically done to provide additional nutrients during the growing season.</p>
+        </div>
+        <div class="section">
+            <h2>Split Application</h2>
+            <p>Split application involves dividing the total amount of fertilizer into multiple smaller doses applied at different stages of crop growth. This method helps in better nutrient management and reduces the risk of nutrient loss.</p>
+        </div>
+        <div class="section">
+            <h2>Foliar Application</h2>
+            <p>Foliar application is the spraying of liquid fertilizers directly onto the leaves of the plants. This method allows for quick nutrient absorption and is often used to correct nutrient deficiencies.</p>
+        </div>
+        <div class="section">
+            <h2>Post Harvest</h2>
+            <p>Post-harvest application involves adding fertilizers to the soil after the crops have been harvested. This helps in replenishing the soil nutrients and preparing it for the next planting season.</p>
+        </div>
+        <div class="section">
+            <h2>Broadcasting</h2>
+            <p>Broadcasting is the even distribution of fertilizers over the entire field. This method is simple and quick but may result in uneven nutrient distribution if not done properly.</p>
+        </div>
+        <div class="section">
+            <h2>Band Placement</h2>
+            <p>Band placement involves applying fertilizers in bands or strips near the seed or plant rows. This method ensures that nutrients are readily available to the plants and reduces nutrient loss.</p>
+        </div>
+        <div class="section">
+            <h2>Drilling</h2>
+            <p>Drilling is the placement of fertilizers into the soil using a drill. This method ensures precise placement of nutrients at the desired depth, promoting better root development and nutrient uptake.</p>
+        </div>
+        <div class="section">
+            <h2>Side Dressing</h2>
+            <p>Side dressing is the application of fertilizers along the sides of the plant rows during the growing season. This method provides additional nutrients to the plants when they need them the most.</p>
+        </div>
+        <div class="section">
+            <h2>Fertigation</h2>
+            <p>Fertigation is the application of fertilizers through the irrigation system. This method allows for precise nutrient delivery and efficient water use, promoting better crop growth and yield.</p>
+        </div>
+        <div class="section">
+            <h2>Deep Placement</h2>
+            <p>Deep placement involves placing fertilizers deep into the soil, close to the plant roots. This method reduces nutrient loss through leaching and ensures that nutrients are available to the plants for a longer period.</p>
+        </div>
+    </div>
+</body>
+</html>

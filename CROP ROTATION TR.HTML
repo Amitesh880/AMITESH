@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crop Rotation Training</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f4f4f4;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+            border-radius: 8px;
+        }
+        .header {
+            background: url('15.jpg') no-repeat center center;
+            background-size: cover;
+            color: white;
+            padding: 40px;
+            text-align: center;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            font-size: 2em;
+            position: relative;
+            z-index: 1;
+        }
+        .header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            border-radius: 8px;
+            z-index: -1;
+        }
+        .section {
+            background: url('16.jpg') no-repeat center center;
+            background-size: cover;
+            margin: 20px 0;
+            padding: 30px;
+            border-radius: 8px;
+            border: 2px solid #ddd;
+            transition: transform 0.3s, box-shadow 0.3s;
+            font-size: 1.2em;
+            color: white;
+            position: relative;
+            z-index: 1;
+        }
+        .section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            border-radius: 8px;
+            z-index: -1;
+        }
+        .section:hover {
+            transform: scale(1.05);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+            border-color: #aaa;
+        }
+        h2 {
+            text-align: center;
+            color: #470ffd;
+            font-size: 1.5em;
+        }
+        p, ul {
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Crop Rotation Training</h1>
+    </div>
+    <div class="container">
+        <div class="section">
+            <h2>What It Is</h2>
+            <p>Crop rotation is the practice of growing different types of crops in the same area in sequential seasons. It helps improve soil health, reduce pest and disease pressure, and increase crop yield.</p>
+        </div>
+        <div class="section">
+            <h2>Key Features of Crop Rotation</h2>
+            <ul>
+                <li>Diverse crop selection</li>
+                <li>Improved soil structure</li>
+                <li>Enhanced nutrient cycling</li>
+                <li>Reduced pest and disease pressure</li>
+                <li>Increased biodiversity</li>
+            </ul>
+        </div>
+        <div class="section">
+            <h2>Types of Crop Rotation</h2>
+            <ul>
+                <li>Two-field rotation: Alternating between two crops</li>
+                <li>Three-field rotation: Including a fallow period</li>
+                <li>Four-field rotation: Incorporating legumes and cover crops</li>
+                <li>Complex rotation: Multiple crops and cover crops</li>
+            </ul>
+        </div>
+        <div class="section">
+            <h2>Benefits</h2>
+            <ul>
+                <li>Improves soil health and fertility</li>
+                <li>Reduces soil erosion</li>
+                <li>Enhances water retention and infiltration</li>
+                <li>Increases biodiversity and soil organic matter</li>
+                <li>Reduces greenhouse gas emissions</li>
+            </ul>
+        </div>
+        <div class="section">
+            <h2>Challenges</h2>
+            <ul>
+                <li>Initial cost of planning and implementation</li>
+                <li>Learning curve for new practices</li>
+                <li>Need for detailed crop management</li>
+                <li>Potential for increased labor requirements</li>
+                <li>Adapting to local soil and climate conditions</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,120 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GrowSmartly</title>
+    <link rel="stylesheet" href="styles0.css">
+</head>
+<body>
+    
+    <header>
+        <video autoplay muted loop id="header-video">
+            <source src="stock-footage-farm-with-field-shed-cows-and-warehouse-farmer-harvesting-wheat-with-tractor-d-animation.webm" type="video/mp4">
+        </video>
+        <h1>GrowSmartly</h1>
+    </header>
+    <nav>
+        <div class="menu-icon" onclick="toggleSidePanel()">
+            <svg width="45" height="35" viewBox="0 0 24 24">
+                <path d="M3 6h18M3 12h18M3 18h18" stroke="white" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+        </div>
+        <ul>
+            <li><a href="ABOUT US .HTML">About Us</a></li>
+            <li><a href="why growsmartly.html">Why GrowSmartly</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <div id="side-panel" class="side-panel">
+        <ul class="main-menu">
+            <li>
+                <button onclick="toggleSubMenu('sustainable-farming-practices')">Sustainable Farming Practices &#9660;</button>
+                <ul id="sustainable-farming-practices" class="sub-menu">
+                    <li><a href="agro.html">Agroforestry</a></li>
+                    <li><a href="percision_agriculture.html">Precision Agriculture</a></li>
+                    <li><a href="crop rotation .html">Crop Rotation</a></li>
+                    <li><a href="IPM .html">Integrated Pest Management</a></li>
+                    <li><a href="SORI .html">System of Rice Intensification</a></li>
+                </ul>
+            </li>
+            <li>
+                <button onclick="toggleSubMenu('sustainable-farming-trainings')">Sustainable Farming Trainings &#9660;</button>
+                <ul id="sustainable-farming-trainings" class="sub-menu">
+                    <li><a href="organic farming practices .html">Organic Farming Training</a></li>
+                    <li><a href="climate smart training .html">Climate Smart Agriculture Training</a></li>
+                    <li><a href="regenerative training.html">Regenerative Training</a></li>
+                    <li><a href="swmt.html">Sustainable Water Management Training</a></li>
+                </ul>
+            </li>
+            <li>
+                <button onclick="toggleSubMenu('soil-management-practices')">Soil Management Practices &#9660;</button>
+                <ul id="soil-management-practices" class="sub-menu">
+                    <li><a href="HGHGHGH.HTML">Conservation Tillage</a></li>
+                    <li><a href="COVER CROPPING .HTML">Cover Cropping</a></li>
+                    <li><a href="CROP ROTATION TR.HTML">Crop Rotation</a></li>
+                    <li><a href="ORGANIC AND COMPOSTING MATTER TR.HTML">Composting and Organic Matter Addition</a></li>
+                </ul>
+            </li>
+            <li>
+                <button onclick="toggleSubMenu('manure-fertilizers')">Sustainable Use of Manure and Fertilizers &#9660;</button>
+                <ul id="manure-fertilizers" class="sub-menu">
+                    <li><a href="use organic manures strategically.html">Use Organic Manures Strategically</a></li>
+                    <li><a href="practice integrated nutrient management .html">Practice Integrated Nutrient Management</a></li>
+                    <li><a href="ADOPT PRECISION FERTILIZATION.HTML">Adopt Precision Fertilization</a></li>
+                    <li><a href="timing and method of application.html">Time and Method of Application</a></li>
+                </ul>
+            </li>
+            <li>
+                <button onclick="toggleSubMenu('bad-farming-practices')">Bad Farming Practices &#9660;</button>
+                <ul id="bad-farming-practices" class="sub-menu">
+                    <li><a href="JHUM CULTIVATION .HTML">Jhum Cultivation</a></li>
+                    <li><a href="slash and burn agriculture .html">Slash and Burn Agriculture</a></li>
+                    <li><a href="over reliance on rainfed agriculture .html">Over Reliance on Rainfed Agriculture</a></li>
+                    <li><a href="nomadic herding.html">Nomadic Herding</a></li>
+                    <li><a href="terrace farming without maintenance.html">Terrace Farming Without Maintenance</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <div class="hero">
+        <h2>Empowering Farmers With Smart Crop Choices</h2>
+    </div>
+    <div class="flex-container">
+        <div class="flex-item">
+            <h3>About Sustainable Farming</h3>
+            <p>Discover the principles and practices of sustainable farming that help preserve our environment while ensuring productive and profitable agriculture.</p>
+        </div>
+        <div class="flex-item">
+            <h3>Organic Farming Benefits</h3>
+            <p>Learn about the numerous benefits of organic farming, including improved soil health, reduced chemical usage, and healthier food options.</p>
+        </div>
+        <div class="flex-item">
+            <h3>GrowSmartly Initiatives</h3>
+            <p>Explore our initiatives aimed at empowering farmers with the knowledge and tools needed to adopt sustainable and organic farming practices.</p>
+        </div>
+    </div>
+    <div class="grid-container">
+        <div class="grid-item" style="background-image: url(kharif\ image.jpg);" onclick="window.location.href='kharif.html'">
+            <span class="title">Kharif</span>
+            <span class="info">typically sown with the onset of the monsoon in June and harvested by the end of the rainy season in September or October.</span>
+        </div>
+        <div class="grid-item" style="background-image: url(Rabi-Crops.jpg);" onclick="window.location.href='rabi.html'">
+            <span class="title">Rabi</span>
+            <span class="info"> are planted after the monsoon rains have ended, around October or November, and are harvested in the spring, around March or April</span>
+        </div>
+        <div class="grid-item" style="background-image: url(zzzz.jpg) ; background-size: cover;" onclick="window.location.href='zaid.html'">
+            <span class="title">Zaid</span>
+            <span class="info">are grown in the short season between the Rabi and Kharif crops, from March to June.</span>
+        </div>
+        <div class="grid-item" style="background-image: url(perennial\ crops.jpg);" onclick="window.location.href='perennial.html'">
+            <span class="title">Perennial</span>
+            <span class="info">are different from these seasonal crops as they can be harvested multiple times . These crops have a long lifespan and do not need to be replanted after each harvest</span>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2024 GrowSmartly. All rights reserved.</p>
+    </footer>
+    <script src="script1.js"></script>
+</body>
+</html> 

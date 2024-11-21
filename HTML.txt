@@ -1,0 +1,362 @@
+HTML
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GrowSmartly</title>
+    <link rel="stylesheet" href="styles2.css">
+</head>
+<body>
+    <header>
+        <h1>GrowSmartly</h1>
+    </header>
+    <nav>
+        <div class="menu-icon" onclick="toggleSidePanel()">
+            <svg width="45" height="35" viewBox="0 0 24 24">
+                <path d="M3 6h18M3 12h18M3 18h18" stroke="white" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+        </div>
+        <ul>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#why">Why GrowSmartly</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <div id="side-panel" class="side-panel">
+        <ul class="main-menu">
+            <li>
+                <button onclick="toggleSubMenu('sustainable-farming-practices')">Sustainable Farming Practices &#9660;</button>
+                <ul id="sustainable-farming-practices" class="sub-menu">
+                    <li><a href="agroforestry.html">Agroforestry</a></li>
+                    <li><a href="precision-agriculture.html">Precision Agriculture</a></li>
+                    <li><a href="crop-rotation.html">Crop Rotation</a></li>
+                    <li><a href="integrated-pest-management.html">Integrated Pest Management</a></li>
+                    <li><a href="system-of-rice-intensification.html">System of Rice Intensification</a></li>
+                </ul>
+            </li>
+            <li>
+                <button onclick="toggleSubMenu('sustainable-farming-trainings')">Sustainable Farming Trainings &#9660;</button>
+                <ul id="sustainable-farming-trainings" class="sub-menu">
+                    <li><a href="organic-farming-training.html">Organic Farming Training</a></li>
+                    <li><a href="climate-smart-agriculture-training.html">Climate Smart Agriculture Training</a></li>
+                    <li><a href="regenerative-training.html">Regenerative Training</a></li>
+                    <li><a href="sustainable-water-management-training.html">Sustainable Water Management Training</a></li>
+                </ul>
+            </li>
+            <li>
+                <button onclick="toggleSubMenu('soil-management-practices')">Soil Management Practices &#9660;</button>
+                <ul id="soil-management-practices" class="sub-menu">
+                    <li><a href="conservation-tillage.html">Conservation Tillage</a></li>
+                    <li><a href="cover-cropping.html">Cover Cropping</a></li>
+                    <li><a href="crop-rotation.html">Crop Rotation</a></li>
+                    <li><a href="composting-organic-matter.html">Composting and Organic Matter Addition</a></li>
+                </ul>
+            </li>
+            <li>
+                <button onclick="toggleSubMenu('manure-fertilizers')">Sustainable Use of Manure and Fertilizers &#9660;</button>
+                <ul id="manure-fertilizers" class="sub-menu">
+                    <li><a href="use-organic-manures.html">Use Organic Manures Strategically</a></li>
+                    <li><a href="integrated-nutrient-management.html">Practice Integrated Nutrient Management</a></li>
+                    <li><a href="precision-fertilization.html">Adopt Precision Fertilization</a></li>
+                    <li><a href="time-method-application.html">Time and Method of Application</a></li>
+                </ul>
+            </li>
+            <li>
+                <button onclick="toggleSubMenu('bad-farming-practices')">Bad Farming Practices &#9660;</button>
+                <ul id="bad-farming-practices" class="sub-menu">
+                    <li><a href="jhum-cultivation.html">Jhum Cultivation</a></li>
+                    <li><a href="slash-burn-agriculture.html">Slash and Burn Agriculture</a></li>
+                    <li><a href="rainfed-agriculture.html">Over Reliance on Rainfed Agriculture</a></li>
+                    <li><a href="nomadic-herding.html">Nomadic Herding</a></li>
+                    <li><a href="terrace-farming.html">Terrace Farming Without Maintenance</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <div class="hero">
+        <h2>Empowering Farmers With Smart Crop Choices</h2>
+    </div>
+    <div class="flex-container">
+        <div class="flex-item">Content 1</div>
+        <div class="flex-item">Content 2</div>
+        <div class="flex-item">Content 3</div>
+    </div>
+    <div class="grid-container">
+        <div class="grid-item" style="background-image: url('path-to-kharif-image.jpg');" onclick="window.location.href='kharif.html'">
+            <span class="title">Kharif</span>
+            <span class="info">typically sown with the onset of the monsoon in June and harvested by the end of the rainy season in September or October.</span>
+        </div>
+        <div class="grid-item" style="background-image: url('path-to-rabi-image.jpg');" onclick="window.location.href='rabi.html'">
+            <span class="title">Rabi</span>
+            <span class="info"> are planted after the monsoon rains have ended, around October or November, and are harvested in the spring, around March or April</span>
+        </div>
+        <div class="grid-item" style="background-image: url('path-to-zaid-image.jpg');" onclick="window.location.href='zaid.html'">
+            <span class="title">Zaid</span>
+            <span class="info">are grown in the short season between the Rabi and Kharif crops, from March to June.</span>
+        </div>
+        <div class="grid-item" style="background-image: url('path-to-vegetation-image.jpg');" onclick="window.location.href='vegetation.html'">
+            <span class="title">Vegetation</span>
+            <span class="info">are different from these seasonal crops as they can be harvested multiple times . These crops have a long lifespan and do not need to be replanted after each harvest</span>
+        </div>
+    </div>
+    <footer>
+        <p>Footer Content</p>
+    </footer>
+    <script src="script1.js"></script>
+</body>
+</html>
+
+
+
+CSS
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 1em;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: white;
+    padding: 0.5em 1em;
+    position: relative; /* Ensure the menu icon stays within the navbar */
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 1em;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.menu-icon {
+    cursor: pointer;
+    z-index: 1000; /* Ensure the menu icon is above the side panel */
+}
+
+.hero {
+    background-image: url('1c7efd9bca0de498d988828de037cd59.jpg');
+    background-size: cover;
+    color: white;
+    text-align: center;
+    padding: 5em 1em;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: space-around;
+    padding: 2em;
+    position: relative; /* Needed for absolute positioning of the middle item */
+}
+
+.flex-item {
+    width: 5cm;
+    height: 5cm;
+    flex: 1;
+    margin: 0 1em;
+    background-color: #f4f4f4;
+    padding: 2em; /* Increase padding to make the items larger */
+    text-align: center;
+    box-sizing: border-box;
+    border: 2px solid #333; /* Ensure padding is included in the width/height */
+}
+
+.flex-item.middle {
+    position: relative;
+    z-index: 1; /* Bring the middle item to the front */
+    transform: scale(1.1); /* Slightly enlarge the middle item */
+    margin: 0 -2em; /* Overlap the side items */
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1em; /* Add a small gap between the items */
+    justify-content: center; /* Center the grid items horizontally */
+    align-items: center; /* Center the grid items vertically */
+    padding: 2em;
+    margin: 0 auto; /* Center the grid container on the page */
+    width: max-content; /* Ensure the container width fits the content */
+}
+
+.grid-item {
+    width: 6.5cm;
+    height: 6.5cm;
+    position: relative; /* Needed for the pseudo-element */
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-shadow: 1px 1px 2px black;
+    border: 2px solid #ccc; /* Add border to the containers */
+    box-sizing: border-box; /* Ensure padding is included in the width/height */
+    overflow: hidden; /* Hide overflow of the pseudo-element */
+    cursor: pointer; /* Indicate that the item is clickable */
+    transition: transform 0.5s ease; /* Smooth transition for resizing */
+}
+
+.grid-item::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    opacity: 0.5; /* Adjust the opacity as needed */
+    z-index: -1; /* Ensure the pseudo-element is behind the text */
+}
+
+.grid-item:nth-child(1)::before {
+    background-image: url('path-to-kharif-image.jpg');
+}
+
+.grid-item:nth-child(2)::before {
+    background-image: url('path-to-rabi-image.jpg');
+}
+
+.grid-item:nth-child(3)::before {
+    background-image: url('path-to-zaid-image.jpg');
+}
+
+.grid-item:nth-child(4)::before {
+    background-image: url('path-to-vegetation-image.jpg');
+}
+
+.grid-item .info {
+    display: none; /* Hide additional information by default */
+}
+
+.grid-item:hover {
+    transform: scaleX(2) scaleY(1.1); /* Enlarge the item more horizontally and vertically on hover */
+}
+
+.grid-item:hover .info {
+    display: block; /* Show additional information on hover */
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 0.5em;
+    border-radius: 5px;
+}
+
+/* Adjust transform origin and z-index for specific items */
+.grid-item:nth-child(1):hover {
+    transform-origin: right center; /* Resize more on the left for Kharif */
+    z-index: 2; /* Ensure Kharif is above other items */
+}
+
+.grid-item:nth-child(2):hover {
+    transform-origin: left center; /* Resize more on the right for Rabi */
+    z-index: 2; /* Ensure Rabi is above other items */
+}
+
+.grid-item:nth-child(3):hover {
+    transform-origin: right center; /* Resize more on the left for Zaid */
+    z-index: 2; /* Ensure Zaid is above other items */
+}
+
+.grid-item:nth-child(4):hover {
+    transform-origin: left center; /* Resize more on the right for Vegetation */
+    z-index: 2; /* Ensure Vegetation is above other items */
+}
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1em;
+}
+
+.side-panel {
+    position: fixed;
+    top: 0;
+    left: -250px;
+    width: 250px;
+    height: 100%;
+    background-color: #333;
+    color: white;
+    transition: left 0.3s;
+    padding: 1em;
+    padding-top: 10em; /* Add padding to ensure content starts below the SVG */
+    z-index: 999; /* Ensure the side panel is below the menu icon */
+    overflow-y: auto; /* Allow vertical scrolling if content overflows */
+}
+
+.side-panel.open {
+    left: 0;
+}
+
+.main-menu {
+    list-style-type: none;
+    padding: 0;
+}
+
+.main-menu > li {
+    margin-bottom: 1em;
+}
+
+.main-menu button {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1em;
+    cursor: pointer;
+    text-align: left;
+    width: 100%;
+}
+
+.sub-menu {
+    list-style-type: none;
+    padding-left: 1em;
+    display: none; /* Hide sub-menus by default */
+}
+
+.sub-menu li {
+    margin-bottom: 0.5em;
+}
+
+.sub-menu a {
+    color: greenyellow;
+    text-decoration: none;
+}
+
+.sub-menu a:hover {
+    text-decoration: underline;
+}
+
+
+JAVASCRIPT
+
+ function toggleSidePanel() {
+    const sidePanel = document.getElementById('side-panel');
+    sidePanel.classList.toggle('open');
+}
+
+function toggleSubMenu(id) {
+    const subMenu = document.getElementById(id);
+    subMenu.style.display = subMenu.style.display === 'block' ? 'none' : 'block';
+}

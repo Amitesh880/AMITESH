@@ -1,0 +1,114 @@
+/* Reset margins and paddings for all elements */
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box; /* Add box-sizing for better layout control */
+}
+
+.heading {
+   position: relative;
+   z-index: 1; /* Changed to 1 to ensure the heading is above background */
+   width: 80%;
+   height: 15vh;
+   margin: auto;
+   display: flex;
+   justify-content: center;
+   align-items: center; /* Center the heading vertically */
+   border: 2px solid black;
+   border-radius: 10px; /* Rounded corners */
+   overflow: hidden; /* Prevent overflow */
+   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Add shadow for depth */
+}
+
+.heading h1 {
+   position: absolute;
+   color: rgb(255, 255, 255);
+   font-size: 50px;
+   font-weight: 900;
+   z-index: 10;
+   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Add text shadow for readability */
+}
+
+.heading .headin {
+   position: relative;
+   height: 100%;
+   width: 100%;
+   display: flex;
+   background-color: rgba(0, 0, 0, 0.4); /* Semi-transparent black */
+   z-index: 0;
+}
+
+.container {
+   width: 80%;
+   margin: auto;
+   display: flex;
+   flex-direction: column;
+   position: relative;
+   top: 35px;
+   gap: 20px; /* Increased gap for better spacing */
+}
+
+.About {
+   width: 100%;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   border: 1px solid black;
+   border-radius: 10px; /* Rounded corners */
+   background-color: white; /* White background for contrast */
+   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Light shadow for depth */
+   padding: 20px; /* Padding for inner spacing */
+   transition: transform 0.3s ease; /* Animation for hover effect */
+}
+
+.About:hover {
+   transform: scale(1.02); /* Scale effect on hover */
+}
+
+.box1 {
+   height: 97%;
+   display: flex;
+   justify-content: center; /* Center content */
+   align-items: center; /* Center content */
+}
+
+.box2 {
+   width: 75%;
+   height: 97%;
+}
+
+.box2 h1 {
+   font-size: 45px;
+   font-weight: 800;
+   color: #333; /* Darker color for better readability */
+}
+
+.box2 p {
+   font-size: 20px; /* Reduced font size for better readability */
+   color: #555; /* Softer gray for text */
+   line-height: 1.5; /* Improved line height for readability */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+   .heading h1 {
+       font-size: 30px; /* Smaller font size for smaller screens */
+   }
+
+   .container {
+       width: 90%; /* Slightly wider on small screens */
+   }
+
+   .box2 h1 {
+       font-size: 30px; /* Smaller heading on mobile */
+   }
+
+   .box2 p {
+       font-size: 18px; /* Smaller paragraph on mobile */
+   }
+
+   .About {
+       flex-direction: column; /* Stack on mobile */
+       align-items: flex-start; /* Align left */
+   }
+}
