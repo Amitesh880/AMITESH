@@ -4,7 +4,6 @@
    padding: 0;
    box-sizing: border-box; /* Add box-sizing for better layout control */
 }
-
 .heading {
    position: relative;
    z-index: 1; /* Changed to 1 to ensure the heading is above background */
@@ -84,7 +83,7 @@
 }
 
 .box2 p {
-   font-size: 20px; /* Reduced font size for better readability */
+   font-size: 26px; /* Reduced font size for better readability */
    color: #555; /* Softer gray for text */
    line-height: 1.5; /* Improved line height for readability */
 }
